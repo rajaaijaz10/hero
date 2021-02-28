@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    table{
+      background: #12f9;
+border-collapse: 1px;
+
+font-size: 24px;
+padding: 12px;
+text-align: center;
+    }
+    td {
+  height: 50px;
+  vertical-align: top;
+}
+    input{
+      width: 100%;
+      font-size: 24px;
+      background: #3d97;
+    }
+    select{
+      font-size: 24px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <center>
+      <form method="post" action="save.php">
+    <table >
+      <tr><td colspan="2"><h1>Query Form</h1></td></tr>
+      <tr>     <td><label>Name</label></td>                     <td><input type="text" name="Name"></td>   </tr>
+      <tr>     <td><label>District</label></td>                     <td><select name="Dist"><option value="-1" selected="selected">---- Please select ----</option>
+    <option value="Anantnag">Anantnag</option>
+    <option value="Jammu">Jammu</option>
+    <option value="Samba">Samba</option>
+    <option value="Udhampur">Udhampur</option>
+    <option value="Reasi">Reasi</option>
+    <option value="Rajouri">Rajouri</option>
+    <option value="Poonch">Poonch</option>
+    <option value="Doda">Doda</option>
+    <option value="Ramban">Ramban</option>
+    <option value="Kishtwar">Kishtwar</option>
+    <option value="Kulgam">Kulgam</option>
+    <option value="Pulwama">Pulwama</option>
+    <option value="Shopian">Shopian</option>
+    <option value="Budgam">Budgam</option>
+    <option value="Srinagar">Srinagar</option>
+    <option value="Ganderbal">Ganderbal</option>
+    <option value="Bandipora">Bandipora</option>
+    <option value="Baramulla">Baramulla</option>
+    <option value="Kupwara">Kupwara</option>
+    <option value="Kathua">Kathua</option>
+    <option value="Other">Other</option>
+</select></td>   </tr>
+      <tr>     <td><label>Address</label></td>                     <td><input type="text" name="Address"></td>   </tr>
+      <tr>     <td><label>Phone</label></td>                     <td><input type="number" name="Phone"></td>   </tr>
+      <tr>     <td><label>Email</label></td>                     <td><input type="email" name="Email"></td>   </tr>
+      <tr>     <td><label>Name of Languishing projects</label></td>                     <td><input type="text" name="Project"></td>   </tr>
+      <tr>     <td><label>LUP Code</label></td>                     <td><input type="text" name="Code"></td>   </tr>
+
+      <tr>     <td><label>Query with regards to</label></td>                     <td><select name="Regards">
+        <option>Payments</option>
+        <option>Document upload</option>
+        <option>Other</option>
+      
+      </select></td>   </tr>
+
+      <tr>     <td><label>Detailed Query</label></td>                     <td><textarea name="Query" rows="6" cols="50"></textarea></td>   </tr>
+      <tr>     <td><input type="submit" name=""></td>                     <td><input type="reset"></td>  
+    </table>
+    </form>
+    </center>
+
+  </div>
+
+</body>
+</html>
